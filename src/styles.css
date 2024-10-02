@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+.login-container, .chat-room-container, .user-list-container, .public-chat-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  mat-card {
+    margin-top: 20px;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+  button {
+    margin: 10px 0;
+  }
+  
+  .timestamp {
+    float: right;
+    font-size: 0.8em;
+    color: gray;
+  }
+  

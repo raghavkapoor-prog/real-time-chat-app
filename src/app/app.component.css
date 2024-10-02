@@ -1,0 +1,13 @@
+.chat-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  mat-card {
+    margin: 20px 0;
+  }
+  .timestamp {
+    float: right;
+    font-size: 0.8em;
+    color: gray;
+  }
+  
