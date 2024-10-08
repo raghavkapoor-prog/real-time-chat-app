@@ -56,6 +56,7 @@ import { FormsModule } from '@angular/forms';  // To use [(ngModel)]
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { RouterModule } from '@angular/router'; // Import RouterModule for routing
+import { MatIconModule } from '@angular/material/icon';
 
 import { AppComponent } from './app.component';
 import { environment } from '../environments/enviroment';
@@ -85,7 +86,9 @@ import { AppRoutingModule } from './app-routing.module'; // Import the routing m
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
     RouterModule, // Import RouterModule
-    AppRoutingModule // Include the routing module for routing to work
+    AppRoutingModule ,
+    // Include the routing module for routing to work
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

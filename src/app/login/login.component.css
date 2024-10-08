@@ -1,35 +1,126 @@
-/* Full page background */
-.login-container {
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #fff3e0);
+  }
+  
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #00796b;
+    color: white;
+  }
+  
+  .navbar-brand h1 {
+    font-size: 24px;
+  }
+  
+  .navbar-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar-links a:hover {
+    text-decoration: underline;
+  }
+
+  .login-section {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background: linear-gradient(to right, #00c6ff, #0072ff); /* Blue gradient background */
   }
   
-  /* Login box styling */
-  .login-box {
+  .login-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 50px;
+    width: 80%;
+  }
+  
+  .glassmorphism-box {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 30px;
     text-align: center;
-    background: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    max-width: 400px;
   }
   
-  /* Logo styling */
-  .logo {
-    max-width: 100px;
+  .glassmorphism-box h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #00796b;
+  }
+  
+  .glassmorphism-box p {
+    font-size: 1.2em;
+    color: #333;
     margin-bottom: 20px;
   }
   
-  /* Button hover effect */
   button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    font-weight: bold;
     margin-top: 20px;
-    transition: transform 0.3s ease;
   }
   
-  button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+  .project-info {
+    margin-left: 50px;
+    max-width: 500px;
+  }
+  
+  .project-info h3 {
+    font-size: 1.8em;
+    color: #00796b;
+    margin-bottom: 15px;
+  }
+  
+  .project-info p {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
+  .highlight {
+    font-weight: bold;
+    color: #00796b;
+  }
+  
+  .project-info ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .project-info ul li {
+    font-size: 1.1em;
+    margin: 10px 0;
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #00796b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
   }
   
